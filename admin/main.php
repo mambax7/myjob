@@ -670,7 +670,7 @@ switch ($op) {
         }
         echo '<br><br>';
         $obj_handler = xoops_getModuleHandler($handlername, 'myjob');
-        $sform       = new XoopsThemeForm(_AM_MYJOB_ITEMADD, 'additem', XOOPS_URL . '/modules/myjob/admin/main.php', 'post');
+        $sform       = new XoopsThemeForm(_AM_MYJOB_ITEMADD, 'additem', XOOPS_URL . '/modules/myjob/admin/main.php', 'post', true);
         $sform->addElement(new XoopsFormHidden('op', 'additemforsave'), false);
         $sform->addElement(new XoopsFormHidden('handlername', $handlername), false);
         $sform->addElement(new XoopsFormText(_AM_MYJOB_DESCRIPTION, 'libelle', 50, 255, ''), true);

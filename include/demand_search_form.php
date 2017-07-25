@@ -24,7 +24,7 @@
 defined('XOOPS_ROOT_PATH') || exit('XOOPS root path not defined');
 
 include_once XOOPS_ROOT_PATH . '/class/xoopsformloader.php';
-$sform = new XoopsThemeForm(_MYJOB_DEMAND_SEARCH, 'demandsearchform', XOOPS_URL . '/modules/myjob/demandes-search.php', 'post');
+$sform = new XoopsThemeForm(_MYJOB_DEMAND_SEARCH, 'demandsearchform', XOOPS_URL . '/modules/myjob/demandes-search.php', 'post', true);
 // Secteur d'activité *******************************************************************************************************************************
 $secteuractiviteselect = new XoopsFormSelect(_MYJOB_DEMAND_SECTEURACTIVITE, 'secteurid', '', 5, true);
 foreach ($secteurs as $valeur => $libelle) {
